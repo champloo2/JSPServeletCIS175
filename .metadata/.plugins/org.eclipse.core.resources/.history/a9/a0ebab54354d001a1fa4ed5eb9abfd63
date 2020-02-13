@@ -1,0 +1,56 @@
+package controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class bugCalcServlet
+ */
+@WebServlet("/bugCalcServlet")
+public class bugCalcServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public bugCalcServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//gets text from "userCents" button on index.jsp
+		String stringSling = request.getParameter("numOfSlings"); 
+		String stringJuvi = request.getParameter("numOfJuvis"); 
+		String stringSub = request.getParameter("numOfSubs"); 
+		String stringAdult = request.getParameter("numOfAdults"); 
+		
+		String print = ("Slings: " + stringSling + "  Juvis: " + stringJuvi + "  Sub-Adult: " + stringSub + "  Adults: " + stringAdult);
+		PrintWriter writer = response.getWriter();
+		writer.println(print.toString());
+		writer.close();
+		
+		
+		//passes it into the class that does calculations
+		//CoinConverter userCoins = new CoinConverter(Integer.parseInt(userCents)); //initializes userCents object and passes "userCents" text
+		
+		//URL for handling 
+		//request.setAttribute("userCoinPouch", userCoins);
+	
+		//passes to the next JSP
+		//getServletContext().getRequestDispatcher("/results.jsp").forward(request, response);
+		
+	
+	}
+
+}

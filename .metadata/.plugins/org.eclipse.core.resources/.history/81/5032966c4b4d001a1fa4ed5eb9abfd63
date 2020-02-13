@@ -1,0 +1,10 @@
+package model;
+
+public class statusObject {
+	private int days;
+	private double diam;
+	private int daysBetween;
+	private String feederMessage;
+	
+
+}

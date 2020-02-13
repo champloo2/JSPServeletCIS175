@@ -1,0 +1,70 @@
+package model;
+
+public class bugCalculatorObject {
+	
+	private int slings;
+	private int juvis;
+	private int subs;
+	private int adults;
+	private boolean worms;
+	private int numOfBugs;
+	
+	
+	
+	public bugCalculatorObject()
+	{
+		
+	}
+	
+	
+	public bugCalculatorObject(int slings, int juvis, int subs, int adults, boolean worms) {
+		super();
+		this.slings = slings;
+		this.juvis = juvis;
+		this.subs = subs;
+		this.adults = adults;
+		this.worms = worms;
+	}
+	public int getSlings() {
+		return slings;
+	}
+	public void setSlings(int slings) {
+		this.slings = slings;
+	}
+	public int getJuvis() {
+		return juvis;
+	}
+	public void setJuvis(int juvis) {
+		this.juvis = juvis;
+	}
+	public int getSubs() {
+		return subs;
+	}
+	public void setSubs(int subs) {
+		this.subs = subs;
+	}
+	public int getAdults() {
+		return adults;
+	}
+	public void setAdults(int adults) {
+		this.adults = adults;
+	}
+	public boolean isWorms() {
+		return worms;
+	}
+	public void setWorms(boolean worms) {
+		this.worms = worms;
+	}
+	public int getNumOfBugs() {
+		return numOfBugs;
+	}
+	public void setNumOfBugs(int numOfBugs) {
+		this.numOfBugs = numOfBugs;
+	}
+	
+	
+	
+	
+	
+
+}

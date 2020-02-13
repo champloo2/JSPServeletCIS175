@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to the T Feeder</title>
+</head>
+<body>
+<h1>What do you want to do?</h1>
+<a href="bugCalc.jsp">Calculate how many bugs</a>
+<a href="status.jsp">Get feed status</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Feed Status</title>
+</head>
+<body>
+<h1>Get Feed Status</h1>
+<form action="getCentsServlet" method="post">
+Enter number of days since last snacc:"   
+<input type="text" name="daysSinceSnacc" size="10"><br /><br />
+Enter spider diameter in inches:     
+<input type="text" name="numOfJuvis" size="10"><br /><br />
+<input type="submit" value="Get Status" />
+</form>
+</body>
+</html>

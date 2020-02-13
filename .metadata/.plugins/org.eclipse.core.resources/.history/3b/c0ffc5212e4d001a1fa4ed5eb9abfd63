@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Bug Calculator</title>
+</head>
+<body>
+<h1>Bug Calculator</h1>
+<form action="getCentsServlet" method="post">
+Enter whole number:
+<input type="text" name="tFeeder" size="10">
+<input type="submit" value="Feed Ts" />
+</form>
+</body>
+</html>

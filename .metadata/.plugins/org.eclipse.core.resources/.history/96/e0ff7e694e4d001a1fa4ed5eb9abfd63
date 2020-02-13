@@ -1,0 +1,23 @@
+package model;
+
+public class statusObject {
+	private int days;
+	private double diam;
+	private int daysBetween;
+	private String feederMessage;
+	
+	public statusObject()
+	{
+		
+	}
+	
+	public statusObject(int days, double diam) {
+		super();
+		this.days = days;
+		this.diam = diam;
+	}
+	
+	
+	
+
+}

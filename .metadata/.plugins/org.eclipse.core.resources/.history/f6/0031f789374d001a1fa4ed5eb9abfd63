@@ -1,0 +1,11 @@
+package model;
+
+public class bugCalculatorObject {
+	
+	private int slings;
+	private int juvis;
+	private int subs;
+	private int adults;
+	private boolean worms;
+
+}

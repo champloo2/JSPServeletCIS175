@@ -1,0 +1,89 @@
+package model;
+
+public class bugCalculatorObject {
+	
+	private int slings;
+	private int juvis;
+	private int subs;
+	private int adults;
+	private String feederType;
+	private boolean isWorms;
+	private int numOfBugs;
+	
+	
+	
+	public bugCalculatorObject()
+	{
+		
+	}
+	
+	
+	public bugCalculatorObject(int slings, int juvis, int subs, int adults, boolean worms, String feederType) {
+		super();
+		this.feederType = feederType;
+		setFeederType(feederType);
+		this.slings = slings;
+		this.juvis = juvis;
+		this.subs = subs;
+		this.adults = adults;
+		this.isWorms = worms;
+	}
+	public int getSlings() {
+		return slings;
+	}
+	public void setSlings(int slings) {
+		this.slings = slings;
+	}
+	public int getJuvis() {
+		return juvis;
+	}
+	public void setJuvis(int juvis) {
+		this.juvis = juvis;
+	}
+	public int getSubs() {
+		return subs;
+	}
+	public void setSubs(int subs) {
+		this.subs = subs;
+	}
+	public int getAdults() {
+		return adults;
+	}
+	public void setAdults(int adults) {
+		this.adults = adults;
+	}
+	public boolean isWorms(String feederType) {
+		String feeder = getFeederType();
+		char c = feeder.charAt(0);		
+
+		if (c == 'c' || c == 'C')
+		{
+			setWorms(false);
+		}
+		return isWorms;
+	}
+	public void setWorms(boolean worms) {
+		this.isWorms = worms;
+	}
+	public int getNumOfBugs() {
+		return numOfBugs;
+	}
+	public void setNumOfBugs(int numOfBugs) {
+		this.numOfBugs = numOfBugs;
+	}
+	
+	public String getFeederType() {
+		return feederType;
+	}
+
+
+	public void setFeederType(String feederType) {
+		this.feederType = feederType;
+	}
+	
+	
+	
+	
+	
+
+}

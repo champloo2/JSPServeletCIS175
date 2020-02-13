@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [13/Feb/2020:00:00:39 -0600] "GET /tfeeder/bugCalc.jsp HTTP/1.1" 200 684
+0:0:0:0:0:0:0:1 - - [13/Feb/2020:00:00:49 -0600] "POST /tfeeder/bugCalcServlet HTTP/1.1" 200 364
